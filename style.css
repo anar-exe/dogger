@@ -1,0 +1,384 @@
+header {
+  background-color: #ffffff;
+  width: 100%;
+}
+header .box {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .box .minibox {
+  display: none;
+}
+header .box h1 {
+  font-size: 50px;
+}
+header .box h1 span {
+  color: #a2c0be;
+}
+header .box nav a {
+  margin: 0 25px;
+  font-size: 25px;
+  color: #000000;
+}
+@media (max-width: 992px) {
+  header .box .minibox {
+    display: flex;
+  }
+  header .box nav {
+    display: none;
+  }
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+.imgbox img {
+  width: 100%;
+}
+
+#carefor {
+  padding: 40px 0;
+}
+#carefor .textbox h1 {
+  font-weight: 700;
+  font-size: 60px;
+  margin: 0 0 10px;
+}
+#carefor .textbox h4 {
+  color: #818181;
+  font-size: 24px;
+}
+#carefor .imgbox {
+  width: 500px;
+}
+#carefor .imgbox img {
+  border-radius: 20px;
+}
+#welcome {
+  padding: 40px 0;
+}
+#welcome .textbox {
+  padding: 80px;
+}
+#welcome .textbox h1 {
+  font-weight: 700;
+  font-size: 30px;
+}
+#welcome .textbox h3 {
+  color: #6e6e6e;
+  margin: 20px 0 40px;
+  font-size: 20px;
+}
+#welcome .textbox h2, #welcome .textbox h6 {
+  margin: 15px 0;
+}
+#welcome .textbox h2 {
+  font-size: 33px;
+}
+#welcome .textbox h6 {
+  font-size: 18px;
+}
+#welcome .textbox .btn {
+  padding: 10px 30px;
+  border-radius: 35px;
+  background-color: #639a65;
+  color: white;
+}
+#welcome .textbox .btn:hover {
+  background-color: #000000;
+}
+#welcome .textbox .btn:hover h5 {
+  cursor: pointer;
+}
+#welcome .imgbox img {
+  border-radius: 20px;
+}
+#welcome .imgbox img:hover {
+  cursor: pointer;
+}
+#welcome .wid {
+  width: 580px;
+  padding: 0;
+}
+
+#about {
+  padding: 40px 0;
+}
+#about .textbox {
+  padding: 0 100px;
+}
+#about .textbox h1 {
+  font-weight: 700;
+  font-size: 35px;
+}
+#about .textbox h3, #about .textbox p {
+  color: #a8a8a8;
+  font-weight: 100;
+  font-size: 20px;
+  margin: 20px 0 0;
+  line-height: 1.6;
+}
+#about .textbox p {
+  color: #949494;
+  font-size: 18px;
+  line-height: 1.4;
+}
+#about .textbox li {
+  display: flex;
+  padding: 20px 0 0 0;
+}
+#about .textbox .icon {
+  padding: 0 15px 0 0;
+  color: #3f3f3f;
+}
+#about .textbox h4 {
+  font-size: 20px;
+  color: #878787;
+}
+#about .imgbox {
+  width: 450px;
+}
+#about .imgbox img {
+  border-radius: 20px;
+}
+#about .imgbox img:hover {
+  cursor: pointer;
+}
+
+#trainers {
+  margin: 40px 0;
+}
+#trainers h1 {
+  font-weight: 700;
+  font-size: 38px;
+}
+#trainers h3, #trainers h4 {
+  font-weight: 300;
+  color: #a8a8a8;
+  font-size: 20px;
+  margin: 20px 0;
+  line-height: 1.4;
+}
+#trainers .box {
+  margin: 0 5px;
+}
+#trainers .box .textbox {
+  padding: 15px;
+}
+#trainers .box .textbox h2 {
+  font-weight: 300px;
+  font-size: 25px;
+  margin: 20px 0 0;
+}
+#trainers .box .textbox ul {
+  display: flex;
+  flex-direction: row;
+}
+#trainers .box .textbox ul li {
+  margin: 0 10px;
+  background-color: #d4cece;
+  border-radius: 50%;
+  padding: 20px;
+  width: 10px;
+  height: 10px;
+}
+#trainers .box .textbox ul li .icon {
+  margin: -7px;
+}
+#trainers .box .textbox ul li:hover {
+  cursor: pointer;
+}
+#trainers .box .textbox ul li:hover i {
+  cursor: pointer;
+}
+#trainers .box .imgbox img {
+  border-radius: 20px;
+}
+#trainers .box .imgbox img:hover {
+  cursor: pointer;
+}
+#trainers .box .wid {
+  width: 580px;
+}
+
+#pricing {
+  padding: 40px 0;
+}
+#pricing .textbox {
+  width: 580px;
+  text-align: center;
+}
+#pricing .textbox h1 {
+  font-weight: 700;
+  font-size: 35px;
+}
+#pricing .textbox h5 {
+  font-weight: 200;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0);
+  margin: 20px 0 50px;
+}
+#pricing .box {
+  border-radius: 20px;
+  width: 340px;
+  color: #ffffff;
+  background-color: #a2c0be;
+  padding: 50px 30px;
+  text-align: center;
+}
+#pricing .box h2 {
+  font-size: 25px;
+}
+#pricing .box h3 {
+  font-size: 30px;
+  margin: 20px 0 0;
+}
+#pricing .box li {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0 0;
+}
+#pricing .box li h4 {
+  font-size: 18px;
+  margin: 0 0 0 10px;
+}
+#pricing .box .btn {
+  padding: 10px 35px;
+  margin: 30px 0 0;
+  border-radius: 30px;
+  background-color: #343a40;
+  color: #ffffff;
+}
+#pricing .PREMIUM-color {
+  background-color: #343a40;
+}
+#pricing .PREMIUM-color .btn {
+  background-color: #a2c0be;
+}
+
+#questions {
+  padding: 40px 0;
+}
+#questions .wid {
+  width: 580px;
+}
+#questions .wid .bigicon i {
+  font-size: 30px;
+}
+#questions .wid h1 {
+  font-weight: 700;
+  font-size: 36px;
+  margin: 15px 0;
+}
+#questions .wid h3 {
+  font-size: 20px;
+  margin: 0 0 40px;
+  line-height: 1.4;
+}
+#questions .textbox {
+  padding: 0 70px;
+}
+#questions .textbox .minibox {
+  margin: 20px 0 0 0;
+}
+#questions .textbox li {
+  margin: 30px 0 0;
+  display: flex;
+}
+#questions .textbox h2, #questions .textbox h4 {
+  font-size: 25px;
+  margin: 0 0 0 10px;
+  color: #717171;
+}
+#questions .textbox:hover h2, #questions .textbox:hover h4 {
+  cursor: pointer;
+}
+#questions .textbox p {
+  font-size: 20px;
+  margin: 30px 0 0 32px;
+  color: #949494;
+}
+#questions .textbox .icon {
+  color: #d4cece;
+}
+#questions .textbox .icon i {
+  font-size: 22px;
+}
+#questions .imgbox img {
+  border-radius: 20px;
+}
+
+#doggerblog {
+  padding: 40px 0;
+}
+#doggerblog .wid {
+  width: 580px;
+}
+#doggerblog .wid h1 {
+  font-weight: 700;
+  font-size: 35px;
+}
+#doggerblog .wid h3 {
+  font-size: 20px;
+  margin: 30px 0 60px;
+}
+#doggerblog .box {
+  display: flex;
+}
+#doggerblog .box .textbox {
+  margin: 0 0 0 20px;
+}
+#doggerblog .box .textbox h2 {
+  font-size: 22px;
+}
+#doggerblog .box .textbox h4 {
+  font-size: 18px;
+  color: #b6b6b6;
+}
+#doggerblog .box .textbox p {
+  font-size: 18px;
+  color: #8f8686;
+}
+#doggerblog .box .textbox p, #doggerblog .box .textbox h4 {
+  margin: 20px 0 0;
+}
+#doggerblog .box .imgbox img {
+  border-radius: 20px;
+}
+#doggerblog .box .imgbox img:hover {
+  cursor: pointer;
+}
+
+#ourservices {
+  padding: 40px 0;
+}
+#ourservices .wid {
+  width: 580px;
+}
+#ourservices h1 {
+  font-weight: 700;
+  font-size: 35px;
+}
+#ourservices h3 {
+  font-size: 20px;
+  color: #c6c6c6;
+  margin: 30px 0;
+}
+#ourservices .textbox {
+  padding: 30px 40px;
+}
+#ourservices .textbox h2 {
+  font-size: 25px;
+  color: #757575;
+  margin: 20px 0 0;
+}
+#ourservices .textbox h3 {
+  margin: 30px 0;
+}
+#ourservices .textbox .icon i {
+  font-size: 60px;
+}/*# sourceMappingURL=style.css.map */
