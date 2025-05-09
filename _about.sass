@@ -1,6 +1,9 @@
 #about
     padding: 40px 0
     .textbox
+        display: flex
+        flex-wrap: wrap
+        align-items: center
         padding: 0 100px
         h1
             font-weight: 700
@@ -19,14 +22,24 @@
             display: flex
             padding: 20px 0 0 0
         .icon
+            font-size: 20px
             padding: 0 15px 0 0
-            color: #3f3f3f
+            color: #a2c0be
         h4
             font-size: 20px
             color: #878787
+    .icn
+        padding: 0 100px
+        margin-bottom: 30px
+        font-size: 30px
+        color: #a2c0be
     .imgbox
         width: 450px
         img
             border-radius: 20px
             &:hover
                 cursor: pointer
+    @media ( max-width: 992px )
+        .imgbox
+            margin: 30px 10px 0 20px
+            width: 700px

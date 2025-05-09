@@ -1,9 +1,11 @@
 header {
+  position: sticky;
+  top: 0px;
   background-color: #ffffff;
   width: 100%;
 }
 header .box {
-  padding: 40px 0;
+  padding: 25px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +16,9 @@ header .box .minibox {
 header .box h1 {
   font-size: 50px;
 }
+header .box h1:hover {
+  cursor: pointer;
+}
 header .box h1 span {
   color: #a2c0be;
 }
@@ -21,6 +26,10 @@ header .box nav a {
   margin: 0 25px;
   font-size: 25px;
   color: #000000;
+}
+header .box nav a:hover {
+  cursor: pointer;
+  color: #a2c0be;
 }
 @media (max-width: 992px) {
   header .box .minibox {
@@ -38,6 +47,10 @@ body {
 
 .imgbox img {
   width: 100%;
+}
+
+div {
+  overflow: hidden;
 }
 
 #carefor {
@@ -58,11 +71,24 @@ body {
 #carefor .imgbox img {
   border-radius: 20px;
 }
+@media (max-width: 768px) {
+  #carefor .textbox {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  #carefor .textbox h1 {
+    font-size: 40px;
+  }
+  #carefor .textbox h4 {
+    font-size: 20px;
+  }
+}
+
 #welcome {
   padding: 40px 0;
 }
 #welcome .textbox {
-  padding: 80px;
+  padding: 60px;
 }
 #welcome .textbox h1 {
   font-weight: 700;
@@ -82,10 +108,15 @@ body {
 #welcome .textbox h6 {
   font-size: 18px;
 }
+#welcome .textbox .icon {
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: #a2c0be;
+}
 #welcome .textbox .btn {
   padding: 10px 30px;
   border-radius: 35px;
-  background-color: #639a65;
+  background-color: #a2c0be;
   color: white;
 }
 #welcome .textbox .btn:hover {
@@ -109,6 +140,9 @@ body {
   padding: 40px 0;
 }
 #about .textbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   padding: 0 100px;
 }
 #about .textbox h1 {
@@ -132,12 +166,19 @@ body {
   padding: 20px 0 0 0;
 }
 #about .textbox .icon {
+  font-size: 20px;
   padding: 0 15px 0 0;
-  color: #3f3f3f;
+  color: #a2c0be;
 }
 #about .textbox h4 {
   font-size: 20px;
   color: #878787;
+}
+#about .icn {
+  padding: 0 100px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: #a2c0be;
 }
 #about .imgbox {
   width: 450px;
@@ -148,9 +189,20 @@ body {
 #about .imgbox img:hover {
   cursor: pointer;
 }
+@media (max-width: 992px) {
+  #about .imgbox {
+    margin: 30px 10px 0 20px;
+    width: 700px;
+  }
+}
 
 #trainers {
-  margin: 40px 0;
+  background-color: #a2c0be;
+  padding: 50px 0;
+}
+#trainers .textbox {
+  width: 580px;
+  margin-bottom: 40px;
 }
 #trainers h1 {
   font-weight: 700;
@@ -158,10 +210,15 @@ body {
 }
 #trainers h3, #trainers h4 {
   font-weight: 300;
-  color: #a8a8a8;
+  color: #474747;
   font-size: 20px;
   margin: 20px 0;
   line-height: 1.4;
+}
+#trainers .icn {
+  margin: 50px 0 30px;
+  font-size: 30px;
+  color: #ffffff;
 }
 #trainers .box {
   margin: 0 5px;
@@ -180,7 +237,7 @@ body {
 }
 #trainers .box .textbox ul li {
   margin: 0 10px;
-  background-color: #d4cece;
+  background-color: #ffffff;
   border-radius: 50%;
   padding: 20px;
   width: 10px;
@@ -206,7 +263,7 @@ body {
 }
 
 #pricing {
-  padding: 40px 0;
+  padding: 50px 0;
 }
 #pricing .textbox {
   width: 580px;
@@ -221,6 +278,11 @@ body {
   font-size: 20px;
   color: rgba(0, 0, 0, 0);
   margin: 20px 0 50px;
+}
+#pricing .textbox .icn {
+  margin: 50px 0 30px;
+  font-size: 30px;
+  color: #a2c0be;
 }
 #pricing .box {
   border-radius: 20px;
@@ -250,7 +312,7 @@ body {
   padding: 10px 35px;
   margin: 30px 0 0;
   border-radius: 30px;
-  background-color: #343a40;
+  background-color: #6c757d;
   color: #ffffff;
 }
 #pricing .PREMIUM-color {
@@ -268,6 +330,7 @@ body {
 }
 #questions .wid .bigicon i {
   font-size: 30px;
+  color: #6c757d;
 }
 #questions .wid h1 {
   font-weight: 700;
@@ -308,8 +371,21 @@ body {
 #questions .textbox .icon i {
   font-size: 22px;
 }
+#questions .imgbox {
+  width: 540px;
+  height: 360px;
+}
 #questions .imgbox img {
   border-radius: 20px;
+}
+@media (max-width: 992px) {
+  #questions .textbox {
+    margin-top: 40px;
+  }
+  #questions .imgbox {
+    height: 100%;
+    width: 700px;
+  }
 }
 
 #doggerblog {
@@ -325,6 +401,11 @@ body {
 #doggerblog .wid h3 {
   font-size: 20px;
   margin: 30px 0 60px;
+}
+#doggerblog .wid .icon {
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: #a2c0be;
 }
 #doggerblog .box {
   display: flex;
@@ -352,6 +433,26 @@ body {
 #doggerblog .box .imgbox img:hover {
   cursor: pointer;
 }
+@media (max-width: 992px) {
+  #doggerblog .box {
+    display: block;
+  }
+  #doggerblog .box .textbox {
+    margin: 0;
+  }
+  #doggerblog .box .imgbox {
+    margin-bottom: 20px;
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  #doggerblog .box .textbox {
+    margin: 0 0 30px;
+  }
+  #doggerblog .box .imgbox {
+    width: 500px;
+  }
+}
 
 #ourservices {
   padding: 40px 0;
@@ -367,6 +468,11 @@ body {
   font-size: 20px;
   color: #c6c6c6;
   margin: 30px 0;
+}
+#ourservices .icn {
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: #a2c0be;
 }
 #ourservices .textbox {
   padding: 30px 40px;
